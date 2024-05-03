@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>8</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>264</x>
+      <y>152</y>
+      <w>184</w>
+      <h>152</h>
+    </coordinates>
+    <panel_attributes>Employee
+-
++ name : Str
++ emp_id : Str
++ department : Str
++ job_title : Str
++ basic_salary : Str
++ age : Str
++ dob : Str
++ passport_details : Str</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>256</x>
+      <y>376</y>
+      <w>192</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>Manager
+-</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>344</x>
+      <y>296</y>
+      <w>24</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1000</x>
+      <y>240</y>
+      <w>192</w>
+      <h>104</h>
+    </coordinates>
+    <panel_attributes>Client
+-
++ client_id : Str
++ name : Str
++ address : Str
++ contact_details : Str
++ budget : Str</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1000</x>
+      <y>368</y>
+      <w>208</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>Guest
+-
++ guest_id : Str
++ name : Str
++ address : Str
++ contact_details : Str</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1000</x>
+      <y>592</y>
+      <w>200</w>
+      <h>104</h>
+    </coordinates>
+    <panel_attributes>Supplier
+-
++ supplier_id : Str
++ name : Str
++ address : Str
++ contact_details : Str</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>632</x>
+      <y>456</y>
+      <w>248</w>
+      <h>296</h>
+    </coordinates>
+    <panel_attributes>Event
+-
++ event_id : Str
++ type : Str
++ theme : Str
++ date : Str
++ time : Str
++ duration : Str
++ venue_address : Str
++ guest_list : List
++ catering_company : Str
++ cleaning_company : Str
++ decorations_company : Str
++ entertainment_company : Str
++ furniture_supply_company : Str
++ invoice : Str
++ client : Str
++ guests : List
++ suppliers : List</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>256</x>
+      <y>512</y>
+      <w>216</w>
+      <h>136</h>
+    </coordinates>
+    <panel_attributes>Venue
+-
++ venue_id : Str
++ name : Str
++ address : Str
++ contact : Str
++ min_guests : Int
++max_guests : Int</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1008</x>
+      <y>744</y>
+      <w>184</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>Caterer
+-
++ caterer_id : Str
++ name : Str
++ address : Str
++ contact_details : Str
++ menu : Str
++ min_guests : Int
++max_guests : Int</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1088</x>
+      <y>688</y>
+      <w>24</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>640</x>
+      <y>112</y>
+      <w>224</w>
+      <h>304</h>
+    </coordinates>
+    <panel_attributes>EventManagementSystem
+-
++ employees : List
++ events : List
++ clients : List
++ guests : List
++ suppliers : List
++ venues : List
+-
++ load_data()
++ save_data()
++ create_buttons()
++ add_employee()
++ add_event()
++ add_client()
++ add_guest()
++ add_supplier()
++ extract_data_from_pickle(file_name: str)
++ show_employee_data()
++ show_event_data()
++ show_client_data()
++ show_guest_data()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>856</x>
+      <y>272</y>
+      <w>160</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;180.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>440</x>
+      <y>248</y>
+      <w>216</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>250.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>464</x>
+      <y>304</y>
+      <w>192</w>
+      <h>296</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>220.0;10.0;110.0;10.0;110.0;350.0;10.0;350.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>856</x>
+      <y>328</y>
+      <w>160</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;110.0;10.0;110.0;120.0;180.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>856</x>
+      <y>176</y>
+      <w>424</w>
+      <h>472</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;510.0;10.0;510.0;570.0;430.0;570.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>872</x>
+      <y>648</y>
+      <w>144</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;160.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>464</x>
+      <y>608</y>
+      <w>184</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;210.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>872</x>
+      <y>440</y>
+      <w>144</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;70.0;90.0;70.0;90.0;10.0;160.0;10.0</additional_attributes>
+  </element>
+</diagram>
